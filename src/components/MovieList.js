@@ -2,7 +2,6 @@ import React from "react";
 import MovieCard from "./MovieCard";
 
 const MovieList = ({ title, movies }) => {
-  console.log(movies);
   return (
     <div className="px-6">
       <h1 className="py-4 text-3xl text-white">{title}</h1>
@@ -12,7 +11,7 @@ const MovieList = ({ title, movies }) => {
           WebkitOverflowScrolling: "touch", // Enables smooth scrolling on iOS devices
           scrollbarWidth: "none", // Hides the scrollbar for Firefox
           msOverflowStyle: "none", // Hides the scrollbar for IE and Edge
-          "&::-webkit-scrollbar": {
+          "&::-WebkitScrollbar": {
             display: "none", // Hides the scrollbar for WebKit browsers like Chrome and Safari
           },
         }}
