@@ -11,7 +11,7 @@ const MovieList = ({ title, movies }) => {
           WebkitOverflowScrolling: "touch", // Enables smooth scrolling on iOS devices
           scrollbarWidth: "none", // Hides the scrollbar for Firefox
           msOverflowStyle: "none", // Hides the scrollbar for IE and Edge
-          "&::-WebkitScrollbar": {
+          "&::WebkitScrollbar": {
             display: "none", // Hides the scrollbar for WebKit browsers like Chrome and Safari
           },
         }}
